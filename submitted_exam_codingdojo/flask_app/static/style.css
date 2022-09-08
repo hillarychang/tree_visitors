@@ -1,0 +1,110 @@
+/* *{
+    margin:0px;
+    padding: 0px;
+
+} */
+
+.top{
+    padding:10px;
+}
+
+.first-page{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+
+
+/* .button1 {
+    color: turquoise;
+    background-color: white;
+    border: 2px solid turquoise;
+    border-radius: 26px;
+    padding: 16px 132px;
+    margin: 4px 2px;
+}
+.button2 {
+    border: 2px green;
+    color: white;
+    background-color: turquoise;
+    padding: 16px 16px;
+    margin: 4px 2px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.button3 {
+    border: 2px solid black;
+    color: white;
+    background-color: blue;
+    padding: 16px 132px;
+    margin: 4px 2px;
+    box-shadow: 0 6px black;
+}
+
+.row{
+    display: flex;
+}
+.col{
+    flex: 1;
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 10px;
+    }
+
+.col-2{
+    flex: 2;
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 10px;
+}
+.col-3{
+    flex: 3;
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+
+
+body{
+    margin:0px;
+}
+.nav-links{
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+ul{
+    display: inline-block;
+    margin: 0px;
+}
+
+h1{
+    display: inline-block;
+    margin: 50px;
+    color: white;
+
+}
+
+ul > li{
+    display: inline-block;
+    margin: 30px;
+
+}
+a {
+    color: lightgrey;
+    text-decoration: none;
+}
+.active{
+    color: white;
+}
+.btn{
+    background-color: blue;
+    color: white;
+} */

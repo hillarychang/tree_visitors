@@ -1,0 +1,22 @@
+/* .top{
+    padding:10px;
+}
+
+.first-page{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+} */
+
+.full{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.whole{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}

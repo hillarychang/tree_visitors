@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/static/view_sighting.css">
+
+</head>
+<body>
+
+    {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+    {% if messages %}                            <!-- check if there are any messages -->
+        {% for message in messages %}            <!-- loop through the messages -->
+            <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+    <h1>Arbotrary</h1> 
+
+
+    <h3>{{users.first_name}}</h3> 
+    <a href = "/showUser">Dashboard</a>
+    <a href = "/log_out">Logout</a>
+
+    <h1>{{tree.species}} planted by {{tree.created_at}}</h1> 
+    <p>Where {{tree.location}}</p>
+    <p>When {{tree.created_at}}</p>
+    <p>Reason: {{tree.reason}}</p>
+
+
+    <hr>
+
+
+
+<!-- START EDITING -->
+    <p>Visited by:</p><br>
+    {% for one_user in tree_user.visitedUsers %}
+    <p>Visitor: {{one_user.first_name}} {{one_user.last_name}}</p>   
+    {% endfor %}
+
+<!-- 
+    <a href = "/create_visitor/{{tree.id}}">Did you visit this tree?</a>    -->
+
+
+    {% if curr_status == False %}
+        <a href = "/create_visitor/{{tree.id}}">Did you visit this tree?</a>   
+    {% endif %} 
+
+<!-- find a way to dispalya all skeptics on page -->
+
+    <!-- user_id &  sighting_id-->
+
+
+    
+
+
+
+
+</body>
+</html>
